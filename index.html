@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Imesha & Hashan – Wedding Invitation</title>
+
+  <meta name="description" content="Join Imesha and Hashan as they celebrate their special day on 10 December 2026.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Imesha & Hashan – Wedding Invitation">
+  <meta property="og:description" content="Together with our families, we invite you to celebrate our special day on 10 December 2026.">
+  <meta property="og:image" content="https://drive.google.com/thumbnail?id=1XmM7HqzAEhCocOD8LgXe59rW5dOcKMNT&sz=w1200">
+  <meta property="og:image:alt" content="Illustration of Imesha and Hashan">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Imesha & Hashan – Wedding Invitation">
+  <meta name="twitter:description" content="Join us on 10 December 2026.">
+  <meta name="twitter:image" content="https://drive.google.com/thumbnail?id=1XmM7HqzAEhCocOD8LgXe59rW5dOcKMNT&sz=w1200">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: #390d24;
+      color: #f5dfb0;
+      font-family: Georgia, serif;
+    }
+    p { padding: 20px; }
+  </style>
+</head>
+
+<body>
+  <p>Opening your personalised wedding invitation… ♥</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+
+    if (token) {
+      const destination =
+        "https://script.google.com/macros/s/AKfycbz7rz7ASQ8mjQElASKC-WUeTdI0r4VerQ5JpzrhwECRXnlGSaXM4_ds9i2lxyd-1eSXRQ/exec?token="
+        + encodeURIComponent(token);
+
+      window.location.replace(destination);
+    } else {
+      document.querySelector("p").textContent =
+        "Imesha & Hashan ♥ 10 December 2026";
+    }
+  </script>
+</body>
+</html>
